@@ -7,10 +7,15 @@
           A scheduling app, built on Rails, designed to empower user time management.
         </p>
       </div>
-        <div class ="col-lg-3">
+        <div class="col-lg-3">
             <div class="row">
-                <div class="well">
-                    <%= render "devise/sessions/form" %>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Create an Account</h3>
+                    </div>
+                    <div class="panel-body">
+                        <%= render "devise/registrations/form" %>
+                    </div>
                 </div>
             </div>
         </div>
