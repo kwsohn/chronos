@@ -1,2 +1,18 @@
-<h1>Home#hello</h1>
-<p>Find me in app/views/home/hello.html.erb</p>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="well">
+          <%= render 'partials/new_event', event_id: nil %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="feed" class="well feed">
+          <%= render(@events) || "No Events" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

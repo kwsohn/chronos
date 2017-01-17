@@ -8,6 +8,8 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 100 }
   validates :username, presence: true, length: { maximum: 20 }, :uniqueness => { case_sensitive: false }
   
+  has_many :events
+  
   def self.find_for_database_authentication(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)

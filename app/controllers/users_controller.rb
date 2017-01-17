@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     before_action :authenticate_user!
     
     def show
-        @user = User.find(params[:id])
+        @events = @user.events.paginate(page: params[:page]).order('created_at DESC')
     end
     
     def new

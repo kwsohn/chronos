@@ -4,7 +4,7 @@ body {
 
 .well {
   background-color: white;
-  padding: 14px;
+  padding: 10px;
 }
 
 .navbar-brand {
@@ -36,25 +36,6 @@ body {
   }
 }
 
-.tw-form {
-  .well {
-    padding: 10px 0px;
-    label {
-      font-size: 1.45rem;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
-  }
-  h4 {
-    padding: 0px 20px 10px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
-}
-
 input, textarea {
   box-shadow: none !important;
 }
-
-
-

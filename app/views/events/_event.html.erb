@@ -1,0 +1,21 @@
+<div id="event-<%= event.id %>" class="micropost">
+  <div class="content">
+    <div class="post-content">
+      <div class="post">
+        <%= event.event_text %>
+      </div>
+    </div>
+    <div class="right-content">
+      <span><%= event.created_at %></span>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="actions-content">
+      <% if event.user == current_user %>
+        <%= link_to event_path(event), method: :delete, remote: true do %>
+          <i class="fa fa-trash"></i>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
