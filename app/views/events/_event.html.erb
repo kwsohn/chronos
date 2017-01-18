@@ -2,11 +2,11 @@
   <div class="content">
     <div class="post-content">
       <div class="post">
-        <%= event.event_text %>
+          <b>EVENT:</b> <%= event.event_text %>
       </div>
     </div>
-    <div class="right-content">
-      <span><%= event.created_at %></span>
+    <div class="time-content">
+        <span> <b>WHEN:</b> <%= event.time.to_formatted_s(:short) %></span>
     </div>
   </div>
   <div class="actions">
@@ -15,6 +15,7 @@
         <%= link_to event_path(event), method: :delete, remote: true do %>
           <i class="fa fa-trash"></i>
         <% end %>
+        <%= link_to 'Edit', edit_event_path(event) %>
       <% end %>
     </div>
   </div>

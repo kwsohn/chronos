@@ -1,6 +1,6 @@
 <% if @event.destroy %>
   $("#event-<%= @event_id %>").remove();
-  $('#event-error').html("<%=j render 'partials/error_message', error_message: 'Event deleted successfully' %>");
+  $("#notice").html("<%=j (flash[:notice]) %>");
 <% else %>
   $('#event-error').html("<%=j render 'partials/error_message', error_message: 'Event deletion failed. Try again later' %>");
 <% end %>

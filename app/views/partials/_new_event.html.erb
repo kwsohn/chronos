@@ -3,6 +3,9 @@
         <%= text_area_tag "event[event_text]", nil, class: "form-control", placeholder: "Add a new event" %>
     </div>
     <div class="form-group">
+        <%= datetime_field_tag "event[time]", nil, class: "form-control", placeholder: "Year, Month, Day, Hour" %>
+    </div>
+    <div class="form-group">
         <%= button_tag id: "Add Event", class: "btn btn-primary" do %>
             <%= fa_icon "bolt" %> Add Event
         <% end %>    

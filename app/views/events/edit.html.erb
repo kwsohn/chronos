@@ -1,0 +1,9 @@
+<%= form_for :event, url: event_path(@event), method: :patch do |f| %>
+    <p>
+        <%= f.label :text %><br>
+        <%= f.text_area :event_text %>
+    </p>
+
+    <p> <%= f.submit %> </p>
+<% end %>
+
