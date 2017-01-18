@@ -10,11 +10,16 @@ end
 gem 'rails', '~> 5.0.1'
 # Use twitter bootstrap sass
 gem 'bootstrap-sass', '~> 3.3.6'
+# Use font-awesome 
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# User authentication 
 gem 'devise'
+# Admin features
+gem 'rails_admin'
+# Paginate feature
 gem 'will_paginate'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

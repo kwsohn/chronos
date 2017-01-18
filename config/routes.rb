@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   
   authenticated :user do
@@ -9,6 +10,8 @@ Rails.application.routes.draw do
   unauthenticated :user do
       root 'welcome#index'
   end
+  
+  match 'home' => 'home#hello', :via=> :get
   
   resources :users
   resources :events
