@@ -1,6 +1,6 @@
 # README
 
-A scheduling app to empower user time management. 
+A scheduling app designed to empower user time management. 
 
 http://my-chronos.herokuapp.com
 
