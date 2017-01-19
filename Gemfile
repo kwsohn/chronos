@@ -22,6 +22,7 @@ gem 'pg'
 gem 'devise'
 # Admin features
 gem 'rails_admin'
+gem 'rails_12factor', group: :production
 # Paginate feature
 gem 'will_paginate'
 # Use Puma as the app server
