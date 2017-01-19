@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A scheduling app to empower user time management. 
 
-Things you may want to cover:
+http://my-chronos.herokuapp.com
 
-* Ruby version
+Ruby version: 2.4.0 
 
-* System dependencies
+Rails: 5.0.1
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
